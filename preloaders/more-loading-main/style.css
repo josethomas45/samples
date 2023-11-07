@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loading-container {
+    background: #000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: grid;
+    place-items: center; */
+}
+
+.loading {
+    display: inline-block;
+    position: relative;
+    margin: 5rem;
+    border-width: 30px;
+    border-radius: 50px;
+    border-style: double;
+    border-top-color: #fff;
+    border-bottom-color: #333;
+    border-right-color: #333;
+    border-left-color: #333;
+    animation: roating 1.2s ease-in-out infinite;
+}
+
+@keyframes roating {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        /* circle has a degree pf = 360deg  so to rotate it you need 360 deg OK :) hope you understood*/
+        transform: rotate(360deg);
+    }
+}
+
+/* LOADING 2 CSS */
+
+.loading-2 {
+    display: inline-block;
+    position: relative;
+    margin: 5rem;
+    border-width: 30px;
+    border-radius: 50px;
+    border-style: ridge;
+    border-top-color: #fff;
+    border-bottom-color: #333;
+    border-right-color: #333;
+    border-left-color: #333;
+    animation: roating 1.2s ease-in-out infinite;
+}
